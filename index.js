@@ -2,7 +2,7 @@ const loaderUtils = require("loader-utils");
 const path = require("path");
 const Ajv = require("ajv"); // version >= v7.0.0
 const standaloneCode = require("ajv/dist/standalone").default;
-
+const addFormats = require("ajv-formats");
 module.exports = function (schemaStr, sourceMap) {
   const done = this.async();
 
@@ -28,7 +28,7 @@ module.exports = function (schemaStr, sourceMap) {
   });
 
   const ajv = new Ajv(ajvOptions);
-
+  addFormats(ajv);
   let schema;
 
   try {
