@@ -1,19 +1,7 @@
-const Ajv = require("ajv");
 const loaderUtils = require("loader-utils");
 const path = require("path");
-
 const Ajv = require("ajv"); // version >= v7.0.0
 const standaloneCode = require("ajv/dist/standalone").default;
-
-// now you can
-// write module code to file
-const fs = require("fs");
-const path = require("path");
-fs.writeFileSync(path.join(__dirname, "/validate.js"), moduleCode);
-
-// ... or require module from string
-const requireFromString = require("require-from-string");
-const standaloneValidate = requireFromString(moduleCode); // for a single default export
 
 module.exports = function (schemaStr, sourceMap) {
   const done = this.async();
