@@ -25,6 +25,7 @@ module.exports = function (schemaStr, sourceMap) {
   // { sourceCode: true } should not be overridden
   const ajvOptions = Object.assign({}, defaultAjvOptions, options.ajv || {}, {
     code: { source: true },
+    allErrors: true,
   });
 
   const ajv = new Ajv(ajvOptions);
