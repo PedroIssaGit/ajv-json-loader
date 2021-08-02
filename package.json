@@ -32,8 +32,7 @@
   },
   "homepage": "https://github.com/downace/ajv-json-loader#readme",
   "dependencies": {
-    "ajv": "~6.5.0",
-    "ajv-pack": "~0.3.1",
+    "ajv": "8.6.2",
     "loader-utils": "~1.1.0"
   },
   "devDependencies": {
