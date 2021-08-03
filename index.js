@@ -29,7 +29,7 @@ module.exports = function (schemaStr, sourceMap) {
     jsPropertySyntax: true,
   });
 
-  const ajv = new Ajv(ajvOptions);
+  let ajv = new Ajv(ajvOptions);
   require("ajv-errors")(ajv /*, {singleError: true} */);
   addFormats(ajv);
   let schema;
