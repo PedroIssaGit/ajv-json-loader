@@ -19,7 +19,12 @@
   "resolved" "https://registry.npmjs.org/acorn/-/acorn-5.2.1.tgz"
   "version" "5.2.1"
 
-"ajv-formats@^2.1.0":
+"ajv-errors@^3.0.0":
+  "integrity" "sha512-V3wD15YHfHz6y0KdhYFjyy9vWtEVALT9UrxfN3zqlI6dMioHnJrqOYfyPKol3oqrnCM9uwkcdCwkJ0WUcbLMTQ=="
+  "resolved" "https://registry.npmjs.org/ajv-errors/-/ajv-errors-3.0.0.tgz"
+  "version" "3.0.0"
+
+"ajv-formats@2.1.0":
   "integrity" "sha512-USH2jBb+C/hIpwD2iRjp0pe0k+MvzG0mlSn/FIdCgQhUb9ALPRjt2KIQdfZDS9r0ZIeUAg7gOu9KL0PFqGqr5Q=="
   "resolved" "https://registry.npmjs.org/ajv-formats/-/ajv-formats-2.1.0.tgz"
   "version" "2.1.0"
@@ -31,7 +36,7 @@
   "resolved" "https://registry.npmjs.org/ajv-keywords/-/ajv-keywords-2.1.1.tgz"
   "version" "2.1.1"
 
-"ajv@^8.0.0", "ajv@8.6.2":
+"ajv@^8.0.0", "ajv@^8.0.1", "ajv@8.6.2":
   "integrity" "sha512-9807RlWAgT564wT+DjeyU5OFMPjmzxVobvDFmNAhY+5zD6A2ly3jDp6sgnfyDtlIQ+7H97oc/DGCzzfu9rjw9w=="
   "resolved" "https://registry.npmjs.org/ajv/-/ajv-8.6.2.tgz"
   "version" "8.6.2"
