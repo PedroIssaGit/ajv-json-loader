@@ -26,7 +26,7 @@ module.exports = function (schemaStr, sourceMap) {
   const ajvOptions = Object.assign({}, defaultAjvOptions, options.ajv || {}, {
     code: { source: true },
     allErrors: true,
-    jsonPointers: true,
+    jsPropertySyntax: true,
   });
 
   const ajv = new Ajv(ajvOptions);
