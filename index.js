@@ -23,13 +23,20 @@ module.exports = function (schemaStr, sourceMap) {
   // Maybe will be used in future
   const options = loaderUtils.getOptions(this) || {};
   // { sourceCode: true } should not be overridden
+  if(options.serverSide && options.ajv && options.ajv.allErrors){
+    options.ajv.allErrors = false;
+  }
+  if(options.serverSide){
+    defaultAjvOptions.allErrors = false;
+  }
   const ajvOptions = Object.assign({}, defaultAjvOptions, options.ajv || {}, {
     code: { source: true },
-    allErrors: true,
   });
 
   let ajv = new Ajv(ajvOptions);
-  require("ajv-errors")(ajv /*, {singleError: true} */);
+  if(!options.serverSide){
+    require("ajv-errors")(ajv /*, {singleError: true} */);
+  }
   addFormats(ajv);
   let schema;
 
