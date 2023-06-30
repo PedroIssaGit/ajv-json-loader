@@ -32,9 +32,9 @@
   },
   "homepage": "https://github.com/downace/ajv-json-loader#readme",
   "dependencies": {
-    "ajv": "8.6.2",
+    "ajv": "8.12.0",
     "ajv-errors": "^3.0.0",
-    "ajv-formats": "2.1.0",
+    "ajv-formats": "2.1.1",
     "loader-utils": "~1.1.0"
   },
   "devDependencies": {
